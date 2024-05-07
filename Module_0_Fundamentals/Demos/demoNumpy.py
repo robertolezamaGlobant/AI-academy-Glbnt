@@ -1,41 +1,31 @@
-from PIL import Image
 import numpy as np
+from PIL import Image
 
-# Load the image
-image = Image.open('Module_0_Fundamentals/Demos/Selfie.jpg')
-
-# Convert the image to grayscale if necessary
-grayscale_image = image.convert('L')
-
-# Resize the grayscale image to 500x500 pixels
-grayscale_image = grayscale_image.resize((500, 500))
-
-# Convert the image to a NumPy array
-image_array = np.array(grayscale_image)
+# Load the image using NumPy
+image = np.array(Image.open('Module_0_Fundamentals/Demos/Selfie.jpg'))
 
 # Display the shape of the array
-print("Shape of the image array:", image_array.shape)
+print("Shape of the image array:", image.shape)
 
 # Display the image array
-print("Image array:")
-print(image_array)
+print("Original Image array:")
+print(image)
 
-# TODO: Review the error code: TypeError: color must be int or single-element tuple on line 29 
-# img = Image.new('1', (500, 500))
-# pixels = img.load()
+# Convert the image to grayscale
+grayscale_image = np.dot(image[...,:3], [0.2989, 0.5870, 0.1140])
 
-# for i in range(img.size[0]):
-#     for j in range(img.size[1]):
-#         pixels[i, j] = image_array[i][j]
+# Display the image array
+print("Grayscale Image array:")
+print(grayscale_image)
 
-# for i in range(image_array.shape[0]):
-#     for j in range(image_array.shape[1]):
-#         pixels[i, j] = image_array[i][j]
+# Convert the grayscale image to a PIL Image
+grayscale_image_pil = Image.fromarray(grayscale_image.astype(np.uint8))
 
+# Resize the grayscale image to 500x500 pixels
+resized_grayscale_image = grayscale_image_pil.resize((500, 500))
 
-# Save the grayscale image
-grayscale_image.show()
-grayscale_image.save('Module_0_Fundamentals/Demos/Selfie_Grayscale.jpg')
+# Save the resized grayscale image to a new file
+resized_grayscale_image.save('Module_0_Fundamentals/Demos/Selfie_Grayscale.jpg')
 
-# img.show()
-# img.save('Module_0_Fundamentals/Demos/Selfie_New.jpg')
+# Display the size of the resized grayscale image
+print("Size of the resized grayscale image:", resized_grayscale_image.size)
