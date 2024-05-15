@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 
 # Load the image using NumPy
-image = np.array(Image.open('Module_0_Fundamentals/Demos/Selfie.jpg'))
+image = np.array(Image.open('Module_0_Fundamentals/0_1_Material/Python_Libraries/05_Demos/Husky.jpg'))
 
 # Display the shape of the array
 print("Shape of the image array:", image.shape)
@@ -22,10 +22,11 @@ print(grayscale_image)
 grayscale_image_pil = Image.fromarray(grayscale_image.astype(np.uint8))
 
 # Resize the grayscale image to 500x500 pixels
-resized_grayscale_image = grayscale_image_pil.resize((500, 500))
+resized_grayscale_image = grayscale_image_pil.resize((600, 400))
+# rotated_grayscale_image = resized_grayscale_image.rotate(90)
 
 # Save the resized grayscale image to a new file
-resized_grayscale_image.save('Module_0_Fundamentals/Demos/Selfie_Grayscale.jpg')
+resized_grayscale_image.save('Module_0_Fundamentals/0_1_Material/Python_Libraries/05_Demos/Husky_Grayscale.jpg')
 
 # Display the size of the resized grayscale image
 print("Size of the resized grayscale image:", resized_grayscale_image.size)
