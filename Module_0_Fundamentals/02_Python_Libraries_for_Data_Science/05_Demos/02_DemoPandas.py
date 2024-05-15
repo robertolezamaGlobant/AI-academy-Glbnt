@@ -1,3 +1,9 @@
+
+############################################################################################
+# Python code example for reading a CSV file with 20 Students data representing theirs
+# scores per subject (Math, Science, English). Doing some statistics and calculate their
+# average per subject and finally plotting it to generate a visual graph.
+############################################################################################
 import pandas as pd
 import matplotlib.pyplot as plt
 

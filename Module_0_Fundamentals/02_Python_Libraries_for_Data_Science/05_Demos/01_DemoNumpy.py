@@ -1,3 +1,9 @@
+############################################################################################
+# Python code example for reading the bits of an Image of 600 x 499 and store it using Numpy
+# arrays. Then doing some transformation to apply a grayscale operation and save it to a 
+# new image.
+############################################################################################
+
 import numpy as np
 from PIL import Image
 
