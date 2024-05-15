@@ -1,14 +1,12 @@
-# Convert Celsius (C) to Fahrenheit (F)
+############################################################################################
+# Example to convert Celsius (C) to Fahrenheit (F)
 # F = C * 1.8 + 32
 
 # Regular programing
 # def function(C):
 #     F = C * 1.8 + 32
 #     return F
-
-# aprendizaje automatico
-# conocemos los datos de entrada y salida pero no como se obtienen/ calculan (algoritmo)
-# otro ejemplos: valor de una casa, clasificar correo spam, deteccion de fraudes, etc.
+############################################################################################
 
 # To install a package as administrator
 # pip install tensorflow --user
@@ -32,19 +30,20 @@ modelo.compile(
     loss='mean_squared_error'
 )
 
-print('Comenzando entrenamiento...')
+print('Starting training...')
 historial = modelo.fit(celsius, fahrenheit, epochs=1000, verbose=False)
-print('Modelo entrenado')
+print('Model trained')
 
-print('Hagamos una prediccion...')
-resultado = modelo.predict(x=np.array([100.0]))
-print('El resultado es' + str(resultado) + ' fahrenheit!')
+print('Test a prediction for 100°C...')
+testCelsius = 100.0
+resultado = modelo.predict(x=np.array([testCelsius]))
+print('The outcome for: ' + str(testCelsius) + 'is: ' + str(resultado) + ' fahrenheit!')
 # El resultado es[[211.74016]] fahrenheit!
 
-print('Variables internas del modelo:')
-print(capa.get_weights())
+# print('Variables internas del modelo:')
+# print(capa.get_weights())
 
-plt.xlabel('# Epoca')
-plt.ylabel('Magnitud de perdida')
-plt.plot(historial.history['loss'])
-plt.show()
+# plt.xlabel('# Epoca')
+# plt.ylabel('Magnitud de perdida')
+# plt.plot(historial.history['loss'])
+# plt.show()
