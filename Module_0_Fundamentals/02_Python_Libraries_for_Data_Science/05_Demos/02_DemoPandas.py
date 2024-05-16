@@ -1,8 +1,14 @@
+
+############################################################################################
+# Python code example for reading a CSV file with 20 Students data representing theirs
+# scores per subject (Math, Science, English). Doing some statistics and calculate their
+# average per subject and finally plotting it to generate a visual graph.
+############################################################################################
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the dataset
-students_data = pd.read_csv('0_Module_Fundamentals/students_data.csv')
+students_data = pd.read_csv('Module_0_Fundamentals/02_Python_Libraries_for_Data_Science/05_Demos/students_data.csv')
 
 # Display the first few rows of the DataFrame
 print("First few rows of the dataset:")

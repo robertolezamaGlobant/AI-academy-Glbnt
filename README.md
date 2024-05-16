@@ -8,14 +8,14 @@ We will cover those topics on a high level without going to deep on those areas.
 
 ## Prerequisites 
 
-1. Install Visual Studio Code -> https://code.visualstudio.com/download
-2. Install Python -> https://www.python.org/downloads/
-3. Install pip -> https://packaging.python.org/en/latest/tutorials/installing-packages/
+1. Install Visual Studio Code: https://code.visualstudio.com/download
+2. Install Python: https://www.python.org/downloads/
+3. Install pip: https://packaging.python.org/en/latest/tutorials/installing-packages/
 4. Install Python plugin on VS code
 ![alt text](Python_Plugin.png)
 5. Acceso a GitHub
-   - AI Academy repo -> https://github.com/mike-peraza/AI_Academy_Globant_MTY
-   - If you don't have access to the Globant Github, you will need to creata a ticket for it on ServiceNow.
+   - AI Academy repo: https://github.com/mike-peraza/AI_Academy_Globant_MTY
+   - If you don't have access to the Globant Github, you will need to creata a ticket for it on [ServiceDesk](https://tickets.corp.globant.com/incident/create).
 
 ## Academy Content
 - Module 0: Fundamentals of Python Programing
