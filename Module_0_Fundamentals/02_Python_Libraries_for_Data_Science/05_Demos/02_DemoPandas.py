@@ -4,7 +4,10 @@
 # scores per subject (Math, Science, English). Doing some statistics and calculate their
 # average per subject and finally plotting it to generate a visual graph.
 ############################################################################################
+# Step 1. We first need to import the libraries this demo is going to use
+# pip install pandas
 import pandas as pd
+# pip install matplotlib 
 import matplotlib.pyplot as plt
 
 # Load the dataset
