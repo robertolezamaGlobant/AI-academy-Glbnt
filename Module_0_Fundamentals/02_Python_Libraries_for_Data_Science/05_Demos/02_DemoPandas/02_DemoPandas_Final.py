@@ -10,7 +10,7 @@ import pandas as pd
 # pip install matplotlib 
 import matplotlib.pyplot as plt
 
-# Load the dataset
+# Step 2. Load the dataset
 students_data = pd.read_csv('Module_0_Fundamentals/02_Python_Libraries_for_Data_Science/05_Demos/students_data.csv')
 
 # Display the first few rows of the DataFrame
@@ -21,10 +21,10 @@ print(students_data.head())
 print("\nBasic statistics:")
 print(students_data.describe())
 
-# Calculate average score for each subject
+# Step 3. Calculate average score for each subject
 average_scores = students_data[['Math', 'Science', 'English']].mean(axis=1)
 
-# Plot average scores
+# Step 4. Plot average scores
 plt.figure(figsize=(10, 6))
 average_scores.plot(kind='bar', color='skyblue')
 plt.title('Average Scores of Students')
