@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Step 2. Load the dataset
-students_data = pd.read_csv('Module_0_Fundamentals/02_Python_Libraries_for_Data_Science/05_Demos/students_data.csv')
+students_data = pd.read_csv('Module_0_Fundamentals/02_Python_Libraries_for_Data_Science/05_Demos/02_DemoPandas/students_data.csv')
 
 # Display the first few rows of the DataFrame
 print("First few rows of the dataset:")
