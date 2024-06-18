@@ -40,10 +40,10 @@ resultado = modelo.predict(x=np.array([testCelsius]))
 print('The outcome for: ' + str(testCelsius) + 'is: ' + str(resultado) + ' fahrenheit!')
 # El resultado es[[211.74016]] fahrenheit!
 
-# print('Variables internas del modelo:')
-# print(capa.get_weights())
+print('Variables internas del modelo:')
+print(capa.get_weights())
 
-# plt.xlabel('# Epoca')
-# plt.ylabel('Magnitud de perdida')
-# plt.plot(historial.history['loss'])
-# plt.show()
+plt.xlabel('# Epoca')
+plt.ylabel('Magnitud de perdida')
+plt.plot(historial.history['loss'])
+plt.show()

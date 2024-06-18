@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 # Step 1. Load the dataset
-url = "Module_0_Fundamentals/02_Python_Libraries_for_Data_Science/05_Demos/03_DemoScikit-learn/heart.csv"
+url = "/Users/roberto.lezama/Downloads/JetBrains/PycharmProjects/Glbnt/dojo/AI-academy-Glbnt/Module_0_Fundamentals/02_Python_Libraries_for_Data_Science/05_Demos/03_DemoScikit-learn/heart.csv"
 df = pd.read_csv(url)
 
 # Display the first few rows of the dataset
